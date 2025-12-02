@@ -1,6 +1,19 @@
 # Bluetooth Messenger
 
-A simple Bluetooth-based messaging application that works between laptops and Android devices. Messages are stored in RAM only and automatically deleted after 5 minutes.
+A simple Bluetooth-based messaging application for Android and Windows. Messages are stored in RAM only and automatically deleted after 5 minutes.
+
+## 📥 Download Apps
+
+**Ready-to-use apps (no Python required):**
+
+[![Download Android](https://img.shields.io/badge/Download-Android%20APK-green)](https://github.com/JeevikaS-19/Bluetooth_msgs/releases)
+[![Download Windows](https://img.shields.io/badge/Download-Windows%20EXE-blue)](https://github.com/JeevikaS-19/Bluetooth_msgs/releases)
+
+**Installation:**
+- **Android**: Download APK → Enable "Unknown Sources" → Install
+- **Windows**: Download EXE → Run (click "More info" → "Run anyway" if SmartScreen appears)
+
+See [DISTRIBUTION.md](DISTRIBUTION.md) for detailed installation instructions.
 
 ## Features
 
@@ -10,8 +23,26 @@ A simple Bluetooth-based messaging application that works between laptops and An
 - 👥 **Multi-peer Support**: Host can connect to multiple clients simultaneously
 - ⏰ **Auto-deletion**: Messages are automatically deleted after 5 minutes
 - 🖥️ **Simple Terminal UI**: Clean, easy-to-use command-line interface
+- 📱 **GUI App Available**: Standalone apps for Android and Windows
 
-## Installation
+## Quick Start (GUI App)
+
+**The easiest way to use Bluetooth Messenger is with the standalone apps!**
+
+1. **Download** the app for your platform from [Releases](https://github.com/JeevikaS-19/Bluetooth_msgs/releases)
+2. **Install** and run the app
+3. **Select mode**:
+   - Tap "Scan for Devices" to find nearby Bluetooth devices
+   - Select a device to connect as client (you'll need their PIN)
+   - Or tap "Start as Host" to create a chat room and get a PIN
+4. **Chat**: Simple message interface with auto-scrolling
+
+**User Flow:**
+```
+App Opens → Device List → Select Device/Start Host → Enter PIN (client) / Get PIN (host) → Chat!
+```
+
+## Installation (For Developers)
 
 ### Prerequisites
 
@@ -51,7 +82,14 @@ sudo apt-get install libbluetooth-dev
 
 ## Usage
 
-### Running as Host (Server)
+### GUI App (Recommended)
+
+Run the GUI version:
+```bash
+python main.py
+```
+
+### Running as Host (Server) - Terminal Version
 
 The host generates an authentication PIN that clients use to connect.
 
