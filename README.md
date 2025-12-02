@@ -2,18 +2,18 @@
 
 A simple Bluetooth-based messaging application for Android and Windows. Messages are stored in RAM only and automatically deleted after 5 minutes.
 
-## 📥 Download Apps
+## � Quick Start
 
-**Ready-to-use apps (no Python required):**
+**Run directly with Python:**
 
-[![Download Android](https://img.shields.io/badge/Download-Android%20APK-green)](https://github.com/JeevikaS-19/Bluetooth_msgs/releases)
-[![Download Windows](https://img.shields.io/badge/Download-Windows%20EXE-blue)](https://github.com/JeevikaS-19/Bluetooth_msgs/releases)
+```bash
+git clone https://github.com/JeevikaS-19/Bluetooth_msgs.git
+cd Bluetooth_msgs
+pip install kivy pybluez
+python main.py
+```
 
-**Installation:**
-- **Android**: Download APK → Enable "Unknown Sources" → Install
-- **Windows**: Download EXE → Run (click "More info" → "Run anyway" if SmartScreen appears)
-
-See [DISTRIBUTION.md](DISTRIBUTION.md) for detailed installation instructions.
+**Download pre-built apps:** Coming soon! (See [DISTRIBUTION.md](DISTRIBUTION.md) to build yourself)
 
 ## Features
 
